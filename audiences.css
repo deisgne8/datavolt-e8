@@ -11,7 +11,7 @@
 #audiences .eyebrow{font:400 12px/1.4 var(--font-regular);letter-spacing:.08em;color:#d7def0;margin-bottom:42px;display:flex;align-items:center;gap:10px}
 #audiences .eyebrow:before{content:'';width:5px;height:5px;border-radius:50%;background:currentColor}
 #audiences h2{font:400 clamp(44px,3.8vw,62px)/1.1 var(--font-light);letter-spacing:-.025em;max-width:none;color:var(--audience-text)}
-#audiences .audience-intro{font:400 clamp(28px,2.65vw,42px)/1.18 var(--font-light);letter-spacing:-.02em;color:var(--audience-muted);margin-top:22px;max-width:660px}
+#audiences .audience-intro{font:400 17px/1.6 var(--font-light);letter-spacing:0;color:var(--audience-muted);margin-top:22px;max-width:660px}
 
 
 #audiences .audience-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
@@ -26,7 +26,7 @@
 #audiences .audience-card:last-child p{max-width:650px}
 #audiences :focus-visible{outline:2px solid #abc5ff;outline-offset:6px}
 @media(max-width:1100px){#audiences .audience-heading{grid-column:6/-1}#audiences .audience-hero{min-height:680px}#audiences .audience-card{padding:36px;min-height:430px;border-radius:36px}#audiences .audience-index{right:34px}#audiences .audience-card h3{font-size:28px}}
-@media(max-width:700px){#audiences{padding-bottom:72px}#audiences .audience-hero{min-height:660px;align-items:flex-start}#audiences .audience-heading-grid{display:block;padding-top:88px;padding-bottom:160px}#audiences .eyebrow{font-size:11px;margin-bottom:28px}#audiences h2{font-size:42px}#audiences .audience-intro{font-size:27px;line-height:1.25;margin-top:22px}#audiences .audience-film img,#audiences .audience-film video{object-position:26% center;opacity:.65}#audiences .audience-film video{opacity:0}#audiences .audience-film.has-video video{opacity:.65}#audiences .audience-film.has-video img{opacity:0}#audiences .audience-hero:after{background:#05080f45}#audiences .audience-cards{grid-template-columns:1fr;gap:16px}#audiences .audience-card,#audiences .audience-card:last-child{grid-column:auto;min-height:380px;padding:30px 26px;border-radius:28px}#audiences .audience-index{top:24px;right:28px;font-size:84px}#audiences .audience-card h3{font-size:27px}#audiences .audience-card p{font-size:17px;margin-top:16px}#audiences .audience-card .link{font-size:15px}}
+@media(max-width:700px){#audiences{padding-bottom:72px}#audiences .audience-hero{min-height:660px;align-items:flex-start}#audiences .audience-heading-grid{display:block;padding-top:88px;padding-bottom:160px}#audiences .eyebrow{font-size:11px;margin-bottom:28px}#audiences h2{font-size:42px}#audiences .audience-intro{font-size:16px;line-height:1.6;margin-top:22px}#audiences .audience-film img,#audiences .audience-film video{object-position:26% center;opacity:.65}#audiences .audience-film video{opacity:0}#audiences .audience-film.has-video video{opacity:.65}#audiences .audience-film.has-video img{opacity:0}#audiences .audience-hero:after{background:#05080f45}#audiences .audience-cards{grid-template-columns:1fr;gap:16px}#audiences .audience-card,#audiences .audience-card:last-child{grid-column:auto;min-height:380px;padding:30px 26px;border-radius:28px}#audiences .audience-index{top:24px;right:28px;font-size:84px}#audiences .audience-card h3{font-size:27px}#audiences .audience-card p{font-size:17px;margin-top:16px}#audiences .audience-card .link{font-size:15px}}
 @media(prefers-reduced-motion:reduce){#audiences .audience-card{transition:none}}
 
 /* A longer elliptical falloff begins behind the final card, rather than below it. */
@@ -109,7 +109,6 @@
  #audiences.audience-pinned .eyebrow {margin-bottom:24px;}
  #audiences.audience-pinned .audience-intro {margin-top:22px;}
  #audiences.audience-pinned h2 {font-size:min(clamp(44px,3.8vw,62px),5.2vh);}
- #audiences.audience-pinned .audience-intro {font-size:min(clamp(28px,2.65vw,42px),3.4vh);}
  #audiences.audience-pinned .audience-cards {position:absolute;top:var(--audience-cards-top,340px);left:0;right:0;pointer-events:none;}
  #audiences.audience-pinned .audience-card,#audiences.audience-pinned .audience-card:last-child {height:var(--audience-card-height,460px);}
  #audiences.audience-pinned .audience-index {font-size:clamp(60px,8vh,100px);}
