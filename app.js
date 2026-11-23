@@ -30,22 +30,6 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){const wasOpen=nav.c
 })();
 function filterCountry(country){window.dispatchEvent(new CustomEvent('campus:filter',{detail:country}))}
 const enquiry=$('#enquiry'),preview=$('#preview');
-// Search existing homepage sections without sending queries to a service.
-(() => {
- const dialog=$('#site-search'),trigger=$('.header-search'),input=$('#search-query'),results=$('#search-results'),status=$('#search-status');
- const entries=$$('main section[id]').map(section=>({id:section.id,title:section.querySelector('h2,h1')?.textContent.trim(),text:section.textContent.toLowerCase()})).filter(entry=>entry.title);
- function render(){
-  const words=input.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  const matches=entries.filter(entry=>words.every(word=>entry.text.includes(word)));
-  results.replaceChildren();
-  matches.forEach(entry=>{const li=document.createElement('li'),a=document.createElement('a');a.href='#'+entry.id;a.textContent=entry.title;a.addEventListener('click',()=>dialog.close());li.append(a);results.append(li)});
-  status.textContent=words.length?`${matches.length} ${matches.length===1?'result':'results'} found.`:'Explore the homepage';
- }
- trigger.addEventListener('click',()=>{closeMenu();input.value='';render();dialog.showModal();document.body.classList.add('modal-open');input.focus()});
- input.addEventListener('input',render);
- dialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();dialog.close()}});
- $('.search-close',dialog).addEventListener('click',()=>dialog.close());
-})();
 function showPreview(title,copy,note='This destination is outside the homepage concept.'){closeMenu();$('#preview-details').replaceChildren();$('#preview-title').textContent=title;$('#preview-copy').textContent=copy;$('#preview-note').textContent=note;preview.showModal();document.body.classList.add('modal-open')}
 function openEnquiry(type){closeMenu();$('#enquiry select').value=type;$('#enquiry [type=submit]').textContent=type==='Book a tour'?'Request a tour':'Contact sales';$('#form-status').textContent='';enquiry.showModal();document.body.classList.add('modal-open')}
 $$('[data-contact]').forEach(b=>b.addEventListener('click',()=>openEnquiry(b.dataset.contact)));

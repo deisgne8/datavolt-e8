@@ -104,18 +104,8 @@ dialog{border:1px solid var(--line);border-radius:2px;padding:46px;background:va
   .hero { min-height: 810px; padding-top: 80px; }
   .hero-image { top: 405px; }
 }
-/* Compact navigation search and its local-page results. */
+/* Decorative navigation search icon. */
 .header-search{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;padding:12px;border-radius:12px}
-.header-search:hover{background:var(--paper)}
 .header-search img{width:20px;height:20px;object-fit:contain}
-#site-search{background:#fff;border-radius:20px;padding:40px;max-width:640px}
-#site-search h2{margin-bottom:24px;padding-right:30px}
-#site-search input{border-radius:8px}
-#site-search .search-close{position:absolute;right:12px;top:10px;width:44px;height:44px;font-size:30px}
-#site-search #search-status{margin-top:16px;font-size:14px}
-#search-results{padding:0;margin:12px 0 0;list-style:none}
-#search-results a{display:block;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none}
-#search-results a:hover{color:var(--blue)}
 @media(min-width:1101px) and (max-width:1200px){.header .header-row{gap:12px}.header .nav{gap:10px}.header .header-tools{gap:6px}.header .datavolt-logo{width:144px}}
 @media(max-width:370px){.header{left:8px;right:8px}.header .header-row{gap:2px}.header .datavolt-logo{width:96px}.header .header-tools .button:not(.sales){min-width:88px;padding-inline:8px}}
-@media(max-width:700px){#site-search{padding:32px 20px}#site-search h2{font-size:32px}}
