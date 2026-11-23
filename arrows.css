@@ -31,4 +31,5 @@ button:is(:hover,:focus-visible):not(:disabled) .site-arrow-left{translate:-3px 
  .header-row{gap:12px}
  .header .datavolt-logo{width:142px}
  .header .nav{gap:8px}
+ .header .nav-dropdown>summary{font-size:14px;gap:5px}
 }
