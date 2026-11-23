@@ -52,7 +52,7 @@
  const domReady=document.readyState==='loading'
   ?new Promise(resolve=>document.addEventListener('DOMContentLoaded',resolve,{once:true}))
   :Promise.resolve();
- const model=import('./preloader-scene.js?v=seamless-reveal').then(async({mountPreloader})=>{
+ const model=import('./preloader-scene.js?v=brand-palette').then(async({mountPreloader})=>{
   if(finished)return;
   const mounted=await mountPreloader(overlay,abort.signal,()=>{});
   if(finished){mounted.dispose();return;}

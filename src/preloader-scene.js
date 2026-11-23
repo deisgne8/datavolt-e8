@@ -22,7 +22,7 @@ export async function mountPreloader(overlay,signal,onProgress){
  catch(error){disposeModel();throw error}
  renderer.setPixelRatio(Math.min(devicePixelRatio,1.75));
  renderer.outputColorSpace=THREE.SRGBColorSpace;
- renderer.toneMapping=THREE.ACESFilmicToneMapping;
+ renderer.toneMapping=THREE.NeutralToneMapping;
  renderer.toneMappingExposure=.95;
  const scene=new THREE.Scene();
  const camera=new THREE.PerspectiveCamera(32,1,.1,100);
@@ -35,11 +35,33 @@ export async function mountPreloader(overlay,signal,onProgress){
  const group=new THREE.Group();group.add(model);scene.add(group);
  const baseScale=3/Math.max(...bounds.getSize(new THREE.Vector3()).toArray());
  group.scale.setScalar(baseScale);
- // Retain the GLB's cyan-to-violet vertex colors and use a soft satin finish.
- model.traverse(node=>{if(node.isMesh){node.material.roughness=.3;node.material.metalness=.24;node.material.envMapIntensity=.85}});
- scene.add(new THREE.HemisphereLight(0xe9f3ff,0x1c2464,1.1));
- const key=new THREE.DirectionalLight(0xffffff,1.7);key.position.set(-3,4,5);scene.add(key);
- const rim=new THREE.DirectionalLight(0x96dfff,1.6);rim.position.set(4,1,-2);scene.add(rim);
+ // Apply the brand palette in model space so the gradient rotates with the logo.
+ const cyan=new THREE.Color('#00FAFF'),blue=new THREE.Color('#5A7AD9'),violet=new THREE.Color('#6462F2');
+ const tint=new THREE.Color();
+ model.traverse(node=>{
+  if(!node.isMesh)return;
+  const geometry=node.geometry,positions=geometry.getAttribute('position');
+  geometry.computeBoundingBox();
+  const min=geometry.boundingBox.min.x,span=geometry.boundingBox.max.x-min;
+  const colors=new Float32Array(positions.count*3);
+  for(let i=0;i<positions.count;i++){
+   const t=THREE.MathUtils.clamp((positions.getX(i)-min)/span,0,1);
+   if(t<.48)tint.copy(cyan).lerp(blue,THREE.MathUtils.smoothstep(t,0,.48));
+   else tint.copy(blue).lerp(violet,THREE.MathUtils.smoothstep(t,.48,1));
+   tint.toArray(colors,i*3);
+  }
+  geometry.setAttribute('color',new THREE.BufferAttribute(colors,3));
+  const originals=Array.isArray(node.material)?node.material:[node.material];
+  node.material=new THREE.MeshPhysicalMaterial({
+   color:0xffffff,vertexColors:true,side:THREE.DoubleSide,
+   roughness:.5,metalness:0,specularIntensity:.12,envMapIntensity:.3
+  });
+  originals.forEach(material=>material.dispose());
+ });
+ // Restrained neutral lighting keeps the brand colors saturated, with navy shadows.
+ scene.add(new THREE.HemisphereLight(0xffffff,0x091c54,.65));
+ const key=new THREE.DirectionalLight(0xffffff,1.15);key.position.set(-3,4,5);scene.add(key);
+ const rim=new THREE.DirectionalLight(0x00faff,.65);rim.position.set(4,1,-2);scene.add(rim);
  let disposed=false,poseTime=0,lastMotionTime=0,lastStaticPose=false,lastZoom=0,revealZoom=8;
  const clamp=value=>Math.max(0,Math.min(1,value));
  // One periodic orientation path: pose and angular velocity match at the
