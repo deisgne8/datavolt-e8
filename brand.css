@@ -102,3 +102,5 @@ input,select,textarea{font-family:var(--font-regular);border-color:#b4b7cf}
 .header{transition:transform .24s ease}
 .header.is-scroll-hidden{transform:translate3d(0,calc(-100% - 28px),0);pointer-events:none}
 @media(prefers-reduced-motion:reduce){.header{transition:none}}
+
+#careers .careers-banner img{object-position:88% center}
