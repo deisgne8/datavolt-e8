@@ -44,7 +44,7 @@
  mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
  mask-composite:exclude;
  pointer-events:none;
- transition:background-position 1s cubic-bezier(.22,1,.36,1);
+ transition:background-position 1s cubic-bezier(.22,1,.36,1),opacity .25s ease;
 }
 .button.outline:not(.hero-explore):not(.sales)::after{
  content:"";
@@ -62,7 +62,7 @@
 :is(.hero,#services,#deployment,#sustainability,#contact) .button.outline:not(.hero-explore):not(.sales){color:#fff!important}
 .button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible),
 :is(.hero,#services,#deployment,#sustainability,#contact) .button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible){color:var(--cta-navy)!important}
-.button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible)::before{background-position:100% 50%}
+.button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible)::before{background-position:100% 50%;opacity:0}
 .button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible)::after{background-position:100% 50%;opacity:1}
 .button:not(.sales):focus-visible{outline:3px solid var(--cta-blue);outline-offset:4px}
 .button:not(.sales):disabled{opacity:.5;cursor:not-allowed}
