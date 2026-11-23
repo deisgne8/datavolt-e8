@@ -117,3 +117,7 @@ input,select,textarea{font-family:var(--font-regular);border-color:#b4b7cf}
 @media(hover:none){#about .partner-badge span{opacity:1;transform:none}}
 @media(max-width:700px){#about .partners{gap:12px}#about .partner-badge{padding:18px 12px 14px}}
 @media(prefers-reduced-motion:reduce){#about .partner-badge,#about .partner-badge span{transition:none}}
+
+.header-tools span.language{display:inline-flex;align-items:center;justify-content:center;flex:none;min-width:38px;min-height:32px;padding:0 4px;font-size:12px;cursor:default;transition:color .2s ease,background .2s ease}
+.header-tools span.language:hover{color:var(--brand-blue);background:var(--brand-paper)}
+@media(max-width:700px){.header-tools span.language{display:none}}
