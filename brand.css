@@ -43,7 +43,7 @@ h3{font-family:var(--font-medium);font-weight:500;letter-spacing:-.015em;line-he
 .link:hover{text-decoration:underline;color:var(--brand-navy)}
 :focus-visible{outline-color:var(--brand-focus)}
 .header{box-shadow:0 8px 32px #01005014}
-.nav-dropdown summary,.nav-panel a,.nav-panel .link,.menu{font-family:var(--font-navigation);font-weight:500;color:#000}
+.nav-dropdown summary,.nav-panel a,.nav-panel .link,.menu{font-family:var(--font-navigation);font-weight:400;color:#000}
 .header .nav-dropdown summary,.header .nav-panel a,.header .nav-panel .link{font-size:15px}
 .nav-dropdown[open] summary,.nav-dropdown summary:hover,.nav-panel .link:hover{color:var(--brand-blue)}
 .header-tools .button{font-family:var(--font-medium)}
