@@ -43,3 +43,7 @@
  .footer-scene-image{object-position:48% top}
 }
 @media(prefers-reduced-motion:reduce){.closing-panel,.closing-panel-arrow{transition:none}.closing-panel:hover .closing-panel-arrow,.closing-panel:focus-visible .closing-panel-arrow{transform:none}}
+
+.footer-scene .datavolt-logo{filter:none;height:auto}
+.footer-scene .footer-offices a{display:block;width:fit-content;margin-top:10px;text-decoration:none}
+.footer-scene .footer-offices a:hover{ text-decoration:none }
