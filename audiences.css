@@ -19,8 +19,8 @@
 #audiences .audience-index{position:absolute;top:32px;right:44px;font:400 clamp(84px,8vw,132px)/1 var(--font-light);font-variant-numeric:tabular-nums;letter-spacing:-.06em;color:#8d97aa}
 #audiences .audience-card h3{font:400 clamp(26px,2.25vw,36px)/1.15 var(--font-regular);letter-spacing:-.025em;color:var(--audience-text);max-width:470px;margin:0}
 #audiences .audience-card p{font:400 18px/1.5 var(--font-light);color:#bec7d8;max-width:450px;margin:18px 0 20px}
-#audiences .audience-card .link{color:#b8ccff;font:400 16px/1.4 var(--font-regular);min-height:44px;padding:10px 0;display:inline-flex;align-items:center;gap:20px;text-decoration:none;border-bottom:1px solid #62749b;align-self:flex-start}
-#audiences .audience-card .link:hover{color:white;border-color:white}
+#audiences .audience-card .link{color:#b8ccff;font:400 16px/1.4 var(--font-regular);min-height:44px;padding:10px 0;display:inline-flex;align-items:center;gap:20px;text-decoration:none;border-bottom:0;align-self:flex-start}
+#audiences .audience-card .link:hover{color:white;text-decoration:none}
 #audiences .audience-card:focus-within{border-color:#889fdd;background:#202735}
 #audiences .audience-card:last-child{grid-column:1/-1;min-height:350px}
 #audiences .audience-card:last-child p{max-width:650px}
