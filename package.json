@@ -1,0 +1,16 @@
+{
+  "name": "datavolt-homepage-concept",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "check": "node --check app.js && node --check deployment-loader.js && node --check offers.js && node --check preloader-boot.js && node --check src/preloader-scene.js && node --check src/hero-logo.js && node --check audiences.js && node --check campuses.js && node --check why.js && node --check sustainability.js && node --check media.js && node --check motion.js && node --check faq-motion.js && node --check proof.js",
+    "build:deployment": "esbuild src/deployment-scene.js --bundle --format=esm --minify --outfile=deployment-scene.js",
+    "build:preloader": "esbuild src/preloader-scene.js --bundle --format=esm --minify --outfile=preloader-scene.js",
+    "build:hero": "esbuild src/hero-logo.js --bundle --format=esm --minify --outfile=hero-logo.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.0",
+    "three": "0.175.0"
+  }
+}

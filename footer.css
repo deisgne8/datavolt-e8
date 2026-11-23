@@ -1,0 +1,45 @@
+.footer-scene{position:relative;isolation:isolate;overflow:hidden;background:#091c54;color:white;--footer-edge:clamp(20px,2vw,40px)}
+.footer-scene-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center top}
+.footer-scene:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,28,84,.35) 0%,rgba(9,28,84,.45) 38%,rgba(9,28,84,.9) 66%,#091c54 100%)}
+.footer-scene .closing{padding:var(--footer-edge) 0 0;background:transparent}
+.closing-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.closing-panel{position:relative;display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-height:clamp(272px,23.2vw,432px);padding:26px;border:1px solid #ffffff12;border-radius:6px;background:rgba(34,61,118,.46);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:#fff;overflow:hidden;transition:background .35s ease,border-color .35s ease}
+.closing-panel:nth-child(2){background:rgba(9,28,84,.66)}
+.closing-panel-title{font-family:var(--font-light);font-weight:400;font-size:clamp(52px,5.8vw,100px);line-height:1.05;letter-spacing:-.04em}
+.closing-panel-detail{margin-top:auto;padding-top:100px;padding-right:70px;font-family:var(--font-regular);font-size:17px;color:#e6ecff}
+.closing-panel-arrow{position:absolute;right:24px;bottom:24px;width:50px;height:50px;display:grid;place-items:center;background:rgba(205,222,255,.17);border-radius:5px;font:28px/1 Arial,sans-serif;transition:background .3s,transform .3s}
+.closing-panel:hover,.closing-panel:focus-visible{background:rgba(59,100,221,.48);border-color:#ffffff55}
+.closing-panel:hover .closing-panel-arrow,.closing-panel:focus-visible .closing-panel-arrow{background:var(--brand-blue);transform:translateX(4px)}
+.closing-panel:focus-visible{outline:3px solid white;outline-offset:-5px}
+.footer-scene .footer{position:relative;background:transparent;border:0;padding:clamp(90px,8vw,160px) 0 28px}
+.footer-intro{padding:38px 0 48px;display:grid;grid-template-columns:1fr 1fr;gap:9%}
+.footer-intro .eyebrow{color:#c5d4ff;margin-bottom:18px}
+.footer-intro h2{font-family:var(--font-light);font-size:clamp(36px,3.5vw,56px);line-height:1.08;letter-spacing:-.025em;color:#fff}
+.footer-intro h3{font-family:var(--font-light);font-size:clamp(24px,2.3vw,34px);line-height:1.2;color:#fff;max-width:28ch}
+.footer-intro p{font-size:17px;color:#d4def5;max-width:44ch;margin-top:18px}
+.footer-scene .footer-grid{grid-template-columns:1.65fr 1fr 1fr .9fr;gap:42px;padding-top:32px;border-top:1px solid #c3d5ff55}
+.footer-scene .footer-grid h3{color:#c5d4ff;font-size:12px;letter-spacing:.12em}
+.footer-scene .footer-offices{font-size:14px;line-height:1.6;color:#e0e7f6}
+.footer-scene .footer-grid>div>a:not(.logo),.footer-scene .footer-grid>div>.link{font-size:15px}
+.footer-scene .footer-bottom{margin-top:42px;border-color:#c3d5ff44;color:#c5d4ee}
+.footer-scene .footer-bottom .link{color:#c5d4ee}
+.footer-scene .social-icons{gap:22px}
+@media(max-width:700px){
+ .closing-panels{grid-template-columns:1fr;gap:12px}
+ .closing-panel{min-height:208px;padding:22px}
+ .closing-panel-title{font-size:50px}
+ .closing-panel-detail{font-size:15px;padding-top:28px}
+ .closing-panel-arrow{right:20px;bottom:20px;width:44px;height:44px}
+ .footer-scene .footer{padding-top:64px}
+ .footer-intro{grid-template-columns:1fr;gap:28px;padding:32px 0}
+ .footer-intro h2{font-size:38px}
+ .footer-intro h3{font-size:26px}
+ .footer-intro p{font-size:16px}
+ .footer-scene .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 24px}
+ .footer-scene .footer-grid>div:first-child{grid-column:1/-1}
+ .footer-scene .footer-grid>div>a:not(.logo),.footer-scene .footer-grid>div>.link{min-height:44px}
+ .footer-scene .footer-bottom{margin-top:30px}
+ .footer-scene .footer-legal{flex-wrap:wrap;gap:12px 24px}
+ .footer-scene-image{object-position:48% top}
+}
+@media(prefers-reduced-motion:reduce){.closing-panel,.closing-panel-arrow{transition:none}.closing-panel:hover .closing-panel-arrow,.closing-panel:focus-visible .closing-panel-arrow{transform:none}}

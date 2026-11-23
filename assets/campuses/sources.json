@@ -1,0 +1,32 @@
+[
+  {
+    "file": "data-hall.webp",
+    "source": "https://data-volt.com/wp-content/uploads/2023/09/b2s.jpg",
+    "width": 1800,
+    "height": 630
+  },
+  {
+    "file": "network-infrastructure.webp",
+    "source": "https://data-volt.com/wp-content/uploads/2023/09/poshdv2.jpg",
+    "width": 1800,
+    "height": 630
+  },
+  {
+    "file": "infrastructure-render.webp",
+    "source": "https://data-volt.com/wp-content/uploads/2023/09/islandservices.jpg",
+    "width": 1069,
+    "height": 625
+  },
+  {
+    "file": "tashkent.webp",
+    "source": "https://data-volt.com/wp-content/uploads/2026/03/Tashkent-IT-Park-Rendering-2.png",
+    "width": 1806,
+    "height": 1006
+  },
+  {
+    "file": "oxagon.webp",
+    "source": "https://data-volt.com/wp-content/uploads/2026/01/Oxagon.jpeg",
+    "width": 1280,
+    "height": 721
+  }
+]

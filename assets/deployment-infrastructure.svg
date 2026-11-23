@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 650" fill="none">
+<title>Layered cloud and data centre infrastructure</title>
+<defs>
+<g id="rack" stroke="#709bb8" stroke-width="1.1" stroke-linejoin="round"><path d="m0 0 25-14 24 14-25 15Z" fill="#f4faff"/><path d="M0 0v58l24 15V15Z" fill="#98c1db"/><path d="m24 15 25-15v58L24 73Z" fill="#19577e"/><path d="m4 12 16 10v9L4 21Zm0 15 16 10v9L4 36Zm0 15 16 10v9L4 51Z" fill="#8fb6d0"/><path d="m7 17 2 1m3 2 5 3m-10 9 2 1m3 2 5 3m-10 9 2 1m3 2 5 3" stroke="#a3c8df"/></g>
+<g id="cooler" stroke="#709bb8" stroke-width="1.1" stroke-linejoin="round"><path d="m0 0 29-17 40 23-29 17Z" fill="#f4faff"/><path d="M0 0v30l40 23V23Z" fill="#286c96"/><path d="m40 23 29-17v30L40 53Z" fill="#19577e"/><ellipse cx="23" cy="3" rx="8" ry="4" fill="#286c96"/><ellipse cx="44" cy="15" rx="8" ry="4" fill="#286c96"/><path d="m7 12 26 15m-26-8 26 15m14-5 15-8m-15 15 15-8"/></g>
+</defs>
+<g stroke="#6c98b5" stroke-width="1.1" stroke-linejoin="round">
+<path d="m65 494 238-139 233 135-238 140Z" fill="#f4faff"/><path d="M65 494v12l233 136v-12Z" fill="#286c96"/><path d="m298 630 238-140v12L298 642Z" fill="#145074"/>
+<path d="m65 410 238-139 233 135-238 140Z" fill="#f4faff"/><path d="M65 410v12l233 136v-12Z" fill="#286c96"/><path d="m298 546 238-140v12L298 558Z" fill="#145074"/>
+</g>
+<g stroke="#6490ad" stroke-width="1" stroke-dasharray="3 5"><path d="M90 420v64m420-64v64M298 558v61M90 319v77m420-77v77"/></g>
+<use href="#cooler" x="166" y="419"/><use href="#cooler" x="244" y="461"/><use href="#cooler" x="322" y="416"/><use href="#cooler" x="400" y="460"/>
+<g stroke="#6c98b5" stroke-width="1.1" stroke-linejoin="round"><path d="m65 308 238-139 233 135-238 140Z" fill="#e3f0fa"/><path d="M65 308v12l233 136v-12Z" fill="#286c96"/><path d="m298 444 238-140v12L298 456Z" fill="#145074"/></g>
+<use href="#rack" x="208" y="237"/><use href="#rack" x="269" y="272"/><use href="#rack" x="330" y="307"/>
+<use href="#rack" x="145" y="273"/><use href="#rack" x="206" y="308"/><use href="#rack" x="267" y="343"/>
+<use href="#rack" x="271" y="201"/><use href="#rack" x="332" y="236"/><use href="#rack" x="393" y="271"/>
+<g stroke="#6c98b5" stroke-width="1" stroke-dasharray="3 5"><path d="M214 175v44m74-35v48m75-42v46"/></g>
+<g stroke="#709bb8" stroke-width="1.1" stroke-linejoin="round"><path d="M204 99c-7-28 9-53 34-51 16-34 52-38 76-14 25 2 45 25 48 50 29 7 49 31 49 58 0 15-8 25-20 29l-31 16-149-58Z" fill="#357ca4"/><path d="M181 113c-7-28 9-53 34-51 16-34 52-38 76-14 25 2 45 25 48 50 29 7 49 31 49 58 0 20-15 33-36 25l-150-58Z" fill="#f4faff"/><path d="m216 64 22-16m53 0 23-14m25 64 23-14m-10 97 39-10"/></g>
+<g fill="#87aec8"><path d="m209 86 12 5v12l-12-5Zm27 24 12 5v12l-12-5Zm26-32 12 5v12l-12-5Zm25 44 12 5v12l-12-5Zm30 5 12 5v12l-12-5Zm22 25 12 5v12l-12-5Zm-76-13 12 5v12l-12-5Z"/></g>
+<g stroke="#709bb8" stroke-width="1"><path d="M65 175h54m-27-27v54M476 204h45m-22-22v44M87 558h32m-16-16v32"/></g>
+<g fill="#98c1db"><path d="m90 225 16-9 16 9-16 9Z"/><path d="m485 361 16-9 16 9-16 9Z"/></g>
+</svg>
+
+

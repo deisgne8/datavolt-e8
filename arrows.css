@@ -1,0 +1,22 @@
+/* Reuse the campus directory's dotted arrow and navy/cyan controls. */
+.site-arrow{display:block;width:26px;height:26px;flex:none;transition:translate .4s cubic-bezier(.22,1,.36,1)}
+.site-arrow-left{rotate:180deg}
+#news .media-arrows button,
+#audiences .audience-carousel-controls button,
+.closing-panel .closing-panel-arrow{
+ display:grid;place-items:center;width:46px;height:46px;padding:0;
+ border:0;border-radius:8px;background:#091c54;color:#00faff;
+ transition:background .3s,color .3s;
+}
+#news .media-arrows button:is(:hover,:focus-visible):not(:disabled),
+#audiences .audience-carousel-controls button:is(:hover,:focus-visible):not(:disabled),
+.closing-panel:is(:hover,:focus-visible) .closing-panel-arrow{background:#00faff;color:#091c54;transform:none}
+button:is(:hover,:focus-visible):not(:disabled) .site-arrow{translate:3px 0}
+button:is(:hover,:focus-visible):not(:disabled) .site-arrow-left{translate:-3px 0}
+.link span:has(>.site-arrow),.media-read span:has(>.site-arrow){display:inline-grid;place-items:center;width:32px;height:32px;flex:none;border-radius:8px;background:#091c54;color:#00faff}
+.link span>.site-arrow,.media-read span>.site-arrow{width:22px;height:22px}
+.link:is(:hover,:focus-visible) span:has(>.site-arrow),.media-read:is(:hover,:focus-visible) span:has(>.site-arrow){background:#00faff;color:#091c54}
+@media(max-width:700px){
+ #news .media-arrows button,#audiences .audience-carousel-controls button,.closing-panel .closing-panel-arrow{width:44px;height:44px}
+}
+@media(prefers-reduced-motion:reduce){.site-arrow{transition:none}button:is(:hover,:focus-visible):not(:disabled) .site-arrow{translate:none}}

@@ -1,0 +1,21 @@
+/* Interaction only: retain the FAQ's existing grid, spacing and typography. */
+#faq .faq-layout{align-items:start}
+#faq .faq-layout>.intro{position:sticky;top:100px;align-self:start;align-items:flex-start;margin-bottom:0}
+@media(max-width:700px){
+ #faq .faq-layout>.intro{position:static;margin-bottom:30px}
+}
+#faq .faq-animated{position:relative}
+#faq .faq-animated::before{
+ content:"";position:absolute;left:0;right:0;top:-1px;height:2px;
+ background:var(--cta-violet,#6462f2);transform:scaleX(0);transform-origin:left;
+ transition:transform .5s cubic-bezier(.25,.46,.45,.94);pointer-events:none;
+}
+#faq .faq-animated.is-expanded::before{transform:scaleX(1)}
+#faq .faq-animated summary::after{display:none}
+#faq .faq-icon{position:absolute;right:0;top:50%;width:26px;height:26px;transform:translateY(-50%);color:var(--cta-violet,#6462f2);pointer-events:none}
+#faq .faq-icon-vertical{transform-origin:16px 16px;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+#faq .is-expanded .faq-icon-vertical{transform:rotate(90deg)}
+#faq .faq-answer{overflow:hidden}
+@media(prefers-reduced-motion:reduce){
+ #faq .faq-animated::before,#faq .faq-icon-vertical{transition:none}
+}

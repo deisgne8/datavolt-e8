@@ -1,0 +1,124 @@
+/* DataVolt content with LPAS's stationary-intro / layered-card motion. */
+#campuses { padding: 0; background: var(--brand-navy); color: #fff; }
+.campus-scroll-stage { position: relative; overflow: clip; }
+.campus-scroll-track { position: relative; z-index: 3; }
+.campus-intro-slide { position: relative; isolation: isolate; min-height: 100svh; display: flex; align-items: flex-end; padding: 150px 0 80px; overflow: hidden; }
+.campus-intro-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.campus-intro-slide::after { content: ''; position: absolute; inset: 0; background: rgb(3 13 38 / 58%); z-index: -1; }
+.campus-intro-slide::before { content: ''; position: absolute; inset: 0; background: #000; opacity: var(--intro-shade, 0); z-index: 2; pointer-events: none; }
+#campuses .campus-intro-copy { margin: 0 auto; }
+#campuses .campus-intro-copy .eyebrow { color: #fff; margin-bottom: 28px; }
+#campuses .campus-intro-copy h2 { font-size: clamp(64px, 7.7vw, 120px); line-height: 1; margin: 0 0 28px; }
+#campuses .campus-intro-copy p { font-size: 20px; color: #fff; margin-bottom: 32px; }
+#campuses .requirements-cta { color: #fff; background: var(--brand-blue); border-color: var(--brand-blue); }
+#campuses .requirements-cta:hover { background: #2e50b6; }
+#campuses .campus-panel { position: relative; display: grid; grid-template-columns: 1fr; grid-template-rows: 400px 300px; gap: 0; margin: 0; background: var(--brand-indigo); color: #fff; align-items: stretch; overflow: hidden; }
+#campuses .campus-panel[hidden] { display: none; }
+#campuses .campus-panel:nth-child(3n + 2) { background: #6462F2; }
+#campuses .campus-panel:nth-child(3n) { background: var(--brand-blue); }
+#campuses .campus-image { position: relative; width: 100%; height: 100%; margin: 0; border-radius: 0; overflow: hidden; }
+#campuses .campus-image img { width: 100%; height: 100%; object-fit: cover; transform: scale(var(--image-scale, 1)); will-change: transform; }
+#campuses .campus-image figcaption { z-index: 1; bottom: 0; left: 0; right: 0; max-width: none; padding: 10px 24px; background: rgb(1 0 80 / 82%); color: #fff; font-size: 10px; pointer-events: none; }
+.campus-image-action { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; background: transparent; }
+.campus-card-content { position: relative; padding: 30px 30px 26px; min-height: 0; display: grid; grid-template-columns: minmax(0,1fr) auto; grid-template-rows: 1fr auto 28px; gap: 10px 20px; }
+.campus-card-meta { grid-column: 1; grid-row: 1; align-self: start; padding-right: 60px; }
+#campuses .campus-status { color: #fff; font-size: 12px; letter-spacing: .03em; margin: 0 0 5px; }
+#campuses .capacity { font-size: 26px; line-height: 1.2; color: #fff; margin: 0; }
+#campuses .campus-panel h3 { grid-column: 1; grid-row: 2; font-size: clamp(40px, 3.7vw, 58px); line-height: 1.05; margin: 0; color: #fff; }
+#campuses .location { grid-column: 2; grid-row: 2; align-self: end; text-align: right; max-width: 155px; font-size: 15px; line-height: 1.35; color: #fff; margin: 0; }
+.campus-card-footer { display: contents; }
+.campus-card-index { grid-row: 3; grid-column: 1; align-self: end; font-family: var(--font-regular); font-size: 11px; }
+#campuses .campus-link { position: absolute; top: 30px; right: 30px; display: grid; place-items: center; width: 46px; height: 46px; border: 0; border-radius: 8px; background: #091c54; color: #00faff; margin: 0; padding: 0; font-family: var(--font-light); font-size: 28px; line-height: 1; transition: background .3s, color .3s; }
+#campuses .campus-arrow { width: 26px; height: 26px; transition: transform .4s cubic-bezier(.22,1,.36,1); }
+#campuses .campus-link:is(:hover,:focus-visible) { text-decoration: none; background: #00faff; color: #091c54; }
+#campuses .campus-link:is(:hover,:focus-visible) .campus-arrow { transform: translateX(3px); }
+.campus-specification { position: absolute; top: 93px; left: 30px; width: calc(100% - 120px); z-index: 4; }
+.campus-specification summary { cursor: pointer; min-height: 32px; width: fit-content; padding: 6px 0; border-bottom: 1px solid #ffffff65; font-family: var(--font-regular); font-size: 12px; }
+.campus-specification[open] { inset: 12px; width: auto; padding: 14px 20px; overflow: auto; background: var(--brand-navy); box-shadow: 0 4px 24px #0003; }
+.campus-specification[open] summary { width: 100%; }
+#campuses .sample-label { color: #d2d9e9; font-size: 10px; margin: 12px 0; }
+#campuses .campus-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; padding-bottom: 10px; }
+#campuses .spec-row { display: flex; justify-content: space-between; gap: 12px; border-color: #ffffff35; padding: 8px 0; font-size: 13px; }
+#campuses .spec-row strong { font-weight: 400; }
+#campuses :focus-visible { outline: 3px solid #b6d9ff; outline-offset: -4px; }
+/* Desktop: the intro stays still; only the cards cross the viewport. */
+#campuses.is-scroll-driven { height: var(--campus-scroll-height); }
+.is-scroll-driven .campus-scroll-stage { position: sticky; top: 0; height: 100svh; }
+.is-scroll-driven .campus-intro-slide { position: absolute; inset: 0; height: 100%; min-height: 0; opacity: var(--intro-opacity,1); }
+.is-scroll-driven .campus-scroll-track { display: flex; width: max-content; height: 100%; margin-left: var(--campus-viewport-width); will-change: transform; }
+#campuses.is-scroll-driven .campus-panel { flex: 0 0 var(--campus-card-width); width: var(--campus-card-width); height: 100%; grid-template-rows: var(--image-height,50%) minmax(0,1fr); filter: brightness(var(--card-light,1)); }
+.is-scroll-driven .campus-panel h3,
+.is-scroll-driven .campus-card-index,
+.is-scroll-driven .location,
+.is-scroll-driven .campus-card-meta,
+.is-scroll-driven .campus-specification,
+.is-scroll-driven .campus-link { opacity: 0; transform: translateY(10px); transition: opacity .25s, transform .25s, filter .25s; }
+.is-scroll-driven .campus-panel h3 { filter: blur(10px); }
+.is-scroll-driven .campus-panel.is-revealed h3,
+.is-scroll-driven .is-revealed .campus-card-meta,
+.is-scroll-driven .is-revealed .campus-specification { opacity: 1; transform: none; filter: blur(0); transition-duration: .5s; }
+.is-scroll-driven .is-revealed .campus-card-index,
+.is-scroll-driven .is-revealed .location { opacity: 1; transform: none; transition-duration: .5s; transition-delay: .5s; }
+.is-scroll-driven .is-revealed .campus-link { opacity: 1; transform: none; transition-duration: .5s; transition-delay: 1s; }
+.campus-cursor { position: fixed; top: 0; left: 0; z-index: 90; pointer-events: none; width: 110px; height: 110px; border-radius: 50%; background: var(--brand-blue); color: white; font: 14px var(--font-regular); display: grid; place-items: center; opacity: 0; transform: scale(0); transition: transform .3s cubic-bezier(.2,.7,.2,1), opacity .2s; }
+.campus-cursor.is-visible { opacity: 1; transform: scale(1); }
+.campus-cursor.is-scrolling { transform: scale(0); }
+@media (min-width: 992px) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .is-scroll-driven .campus-image-action { cursor: none; }
+}
+/* LPAS changes to vertical, side-image cards on touch and smaller screens. */
+@media (max-width: 767px), (pointer: coarse) {
+  .campus-intro-slide { padding: 132px 0 80px; }
+  #campuses .campus-intro-copy h2 { font-size: 58px; }
+  #campuses .campus-intro-copy p { font-size: 18px; max-width: 28ch; }
+  #campuses .campus-intro-copy .eyebrow { font-size: 12px; }
+  #campuses .campus-panel { grid-template-columns: 72% 28%; grid-template-rows: minmax(320px,auto); }
+  #campuses .campus-image { grid-column: 2; grid-row: 1; z-index: 2; }
+  #campuses .campus-image figcaption { padding: 8px; font-size: 8px; line-height: 1.4; }
+  .campus-card-content { grid-column: 1; grid-row: 1; padding: 24px 20px; grid-template-columns: 1fr; grid-template-rows: auto 1fr auto 22px; gap: 12px; }
+  #campuses .campus-panel h3 { grid-column: 1; grid-row: 1; font-size: 34px; }
+  .campus-card-meta { grid-row: 2; grid-column: 1; padding: 0; }
+  #campuses .campus-status { font-size: 10px; }
+  #campuses .capacity { font-size: 23px; }
+  #campuses .location { grid-row: 3; grid-column: 1; text-align: left; max-width: 170px; font-size: 13px; }
+  .campus-card-index { grid-row: 4; }
+  #campuses .campus-link { top: auto; bottom: 20px; right: 18px; width: 34px; height: 34px; font-size: 22px; }
+  .campus-specification { top: auto; bottom: 102px; left: 20px; width: calc(100% - 40px); }
+  .campus-specification summary { font-size: 11px; }
+  .campus-specification[open] { inset: 8px; width: auto; padding: 12px; }
+  #campuses .campus-specs { grid-template-columns: 1fr; gap: 0; }
+  .campus-mobile-motion .campus-image { transform: translateX(120%); transition: transform 1s cubic-bezier(.25,.46,.45,.94); }
+  .campus-mobile-motion .campus-image img { transform: scale(1.2); transition: transform 1s; }
+  .campus-mobile-motion .campus-panel h3,
+  .campus-mobile-motion .campus-card-meta,
+  .campus-mobile-motion .campus-card-index,
+  .campus-mobile-motion .location { opacity: 0; transform: translateY(10px); transition: opacity .5s, transform .5s; }
+  .campus-mobile-motion .is-revealed .campus-image { transform: none; }
+  .campus-mobile-motion .is-revealed .campus-image img { transform: scale(1); }
+  .campus-mobile-motion .is-revealed h3,
+  .campus-mobile-motion .is-revealed .campus-card-meta,
+  .campus-mobile-motion .is-revealed .campus-card-index,
+  .campus-mobile-motion .is-revealed .location { opacity: 1; transform: none; }
+  .campus-mobile-motion .is-revealed .location,
+  .campus-mobile-motion .is-revealed .campus-card-index { transition-delay: .5s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #campuses *, #campuses *::before { transition: none !important; }
+}
+
+/* Art direction for imagery sourced from DataVolt’s website. */
+#campus-0 .campus-image img { object-position: center; }
+#campus-4 .campus-image img { object-position: center; }
+#campus-5 .campus-image { background: var(--brand-paper); }
+
+/* Campus details are shown only in the accessible preview dialog. */
+#preview-details:empty, #preview-note:empty { display: none; }
+#preview-details { margin: 28px 0; }
+#preview-details h3 { font-size: 25px; margin-bottom: 16px; color: var(--brand-navy); }
+#preview-details .sample-label { font-size: 12px; margin-bottom: 12px; }
+#preview-details .campus-specs { display: block; }
+#preview-details .spec-row { display: flex; justify-content: space-between; gap: 24px; padding: 12px 0; border-top: 1px solid var(--brand-line); color: var(--brand-navy); }
+#preview-details .spec-row strong { font-weight: 400; }
+@media (max-width: 767px), (pointer: coarse) { #campuses .campus-link { width: 44px; height: 44px; } }
+
+#campus-2 .campus-image img { object-position: center 72%; }

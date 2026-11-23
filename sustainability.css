@@ -1,0 +1,41 @@
+#sustainability{position:relative;padding:0;background:#030b1c;color:#fff;isolation:isolate}
+.sustainability-stage{position:relative}
+.sustainability-intro{position:absolute;top:clamp(80px,10svh,120px);left:var(--gutter);z-index:3;max-width:560px;width:calc(100% - var(--gutter)*2)}
+#sustainability .eyebrow{color:#c4d4ff;margin-bottom:20px}
+#sustainability h2{color:#fff;font-size:clamp(38px,3.7vw,60px);line-height:1.08}
+.sustainability-intro p{color:#e0e5ef;font-size:17px;line-height:1.55;max-width:48ch;margin-top:22px}
+#sustainability .sustainability-cta{margin-top:24px;color:#fff;border-color:#a4b4d8;background:rgba(9,28,84,.25)}
+#sustainability .sustainability-cta:hover{background:#3b64dd;border-color:#3b64dd}
+.sustainability-scene{position:relative;min-height:100svh;overflow:hidden;background:#030b1c}
+.sustainability-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.sustainability-scene:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(1,7,23,.8),rgba(1,7,23,.25) 43%,rgba(1,7,23,.64) 60%,rgba(1,7,23,.25))}
+.sustainability-feature{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:28px;align-items:start;padding:32px var(--gutter);margin-top:56svh}
+#sustainability h3{color:white;font-family:var(--font-medium);font-size:clamp(40px,4.5vw,76px);line-height:1.03;letter-spacing:-.035em;text-transform:uppercase;max-width:13ch;text-wrap:balance}
+.sustainability-progress{position:absolute;top:0;left:0;right:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;pointer-events:none}
+.sustainability-progress span{position:relative;height:1px;background:#ffffff4d}
+.sustainability-progress span+span:after{content:"";position:absolute;left:-4px;top:-4px;width:1px;height:9px;background:#ffffff80}
+.sustainability-progress span:before{content:"";position:absolute;inset:0;background:#fff;transform:scaleX(var(--segment-progress,1));transform-origin:left}
+.sustainability-progress span:nth-child(1){--segment-progress:var(--progress-1,1)}
+.sustainability-progress span:nth-child(2){--segment-progress:var(--progress-2,1)}
+.sustainability-progress span:nth-child(3){--segment-progress:var(--progress-3,1)}
+#sustainability.has-scroll-reveal h3{color:transparent;background:linear-gradient(90deg,#fff 0%,#fff var(--text-reveal,100%),#8495ac calc(var(--text-reveal,100%) + 2%),#8495ac 100%);background-clip:text;-webkit-background-clip:text}
+.sustainability-feature p{color:#fff;font-size:clamp(21px,1.9vw,30px);line-height:1.28;padding-top:5px;max-width:32ch}
+#sustainability.is-scroll-scene{height:340svh}
+.is-scroll-scene .sustainability-stage{position:sticky;top:0;height:100svh;overflow:hidden}
+.is-scroll-scene .sustainability-scene{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .65s ease,visibility .65s;pointer-events:none}
+.is-scroll-scene .sustainability-scene.is-active{opacity:1;visibility:visible;pointer-events:auto}
+.is-scroll-scene .sustainability-photo{transform:scale(1.045);transition:transform 1.5s cubic-bezier(.2,.65,.3,1)}
+.is-scroll-scene .is-active .sustainability-photo{transform:scale(1)}
+.is-scroll-scene .sustainability-feature>h3,.is-scroll-scene .sustainability-feature>p{transform:translateY(18px);transition:transform .7s cubic-bezier(.2,.65,.3,1)}
+.is-scroll-scene .is-active .sustainability-feature>h3,.is-scroll-scene .is-active .sustainability-feature>p{transform:translateY(0)}
+@media(max-width:700px){
+ .sustainability-intro{top:104px;max-width:none}
+ #sustainability h2{font-size:40px}
+ .sustainability-intro p{font-size:16px;margin-top:18px}
+ .sustainability-feature{grid-template-columns:1fr;gap:16px;margin-top:55svh;padding:26px var(--gutter) 90px}
+  #sustainability h3{font-size:42px;max-width:18ch;text-wrap:initial}
+ .sustainability-feature p{font-size:21px;padding:0;max-width:32ch}
+ .sustainability-scene{min-height:100svh}
+ .sustainability-scene:first-of-type .sustainability-feature{margin-top:max(440px,56svh)}
+ }
+@media(prefers-reduced-motion:reduce){#sustainability *{transition:none!important;transform:none!important}}

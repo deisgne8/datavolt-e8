@@ -1,0 +1,71 @@
+/* EternaCloud-inspired gradient sweep, using the supplied DataVolt palette.
+   Paint overrides unify legacy section-specific button colors. */
+:root{
+ --cta-cyan:#00faff;
+ --cta-navy:#091c54;
+ --cta-blue:#5a7ad9;
+ --cta-violet:#6462f2;
+ --cta-gradient:linear-gradient(100deg,var(--cta-blue) 0%,var(--cta-violet) 32%,var(--cta-cyan) 72%,var(--cta-cyan) 100%);
+}
+.button:not(.sales){
+ position:relative;
+ isolation:isolate;
+ overflow:hidden;
+ border:1px solid transparent!important;
+ border-radius:14px!important;
+ color:#fff!important;
+ /* A light navy glaze keeps the white label readable over the blue stop. */
+ background:linear-gradient(#091c5426,#091c5426),var(--cta-gradient)!important;
+ background-size:300% 100%!important;
+ background-position:0% 50%!important;
+ background-repeat:no-repeat!important;
+ background-origin:border-box!important;
+ transition:background-position 1s cubic-bezier(.22,1,.36,1),color .35s ease,box-shadow .35s ease!important;
+}
+.button:not(.sales):is(:hover,:focus-visible){
+ background-position:100% 50%!important;
+ color:var(--cta-navy)!important;
+}
+.button.outline:not(.hero-explore):not(.sales){
+ background:transparent!important;
+ color:var(--cta-navy)!important;
+}
+.button.outline:not(.hero-explore):not(.sales)::before{
+ content:"";
+ position:absolute;
+ inset:0;
+ border-radius:inherit;
+ padding:2px;
+ background:linear-gradient(115deg,var(--cta-cyan),var(--cta-blue) 38%,var(--cta-violet) 70%,var(--cta-cyan));
+ background-size:300% 100%;
+ background-position:0% 50%;
+ -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+ -webkit-mask-composite:xor;
+ mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+ mask-composite:exclude;
+ pointer-events:none;
+ transition:background-position 1s cubic-bezier(.22,1,.36,1);
+}
+.button.outline:not(.hero-explore):not(.sales)::after{
+ content:"";
+ position:absolute;
+ inset:0;
+ border-radius:inherit;
+ z-index:-1;
+ background:linear-gradient(105deg,var(--cta-blue),var(--cta-cyan) 70%);
+ background-size:200% 100%;
+ background-position:0% 50%;
+ opacity:0;
+ transition:opacity .45s ease,background-position 1s cubic-bezier(.22,1,.36,1);
+ pointer-events:none;
+}
+:is(.hero,#services,#deployment,#sustainability,#contact) .button.outline:not(.hero-explore):not(.sales){color:#fff!important}
+.button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible),
+:is(.hero,#services,#deployment,#sustainability,#contact) .button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible){color:var(--cta-navy)!important}
+.button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible)::before{background-position:100% 50%}
+.button.outline:not(.hero-explore):not(.sales):is(:hover,:focus-visible)::after{background-position:100% 50%;opacity:1}
+.button:not(.sales):focus-visible{outline:3px solid var(--cta-blue);outline-offset:4px}
+.button:not(.sales):disabled{opacity:.5;cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){
+ .button:not(.sales),.button:not(.sales)::before,.button:not(.sales)::after{transition:none!important}
+}

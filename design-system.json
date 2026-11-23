@@ -1,0 +1,43 @@
+{
+  "observed_on": "2026-11-20",
+  "type": {
+    "headings": "Neo Sans Light",
+    "body": "Neo Sans Light",
+    "labels_and_actions": "Neo Sans Medium",
+    "navigation": "Obvia",
+    "fallback": "Neo Sans Regular / Geist"
+  },
+  "sources": [
+    "https://data-volt.com/",
+    "https://data-volt.com/wp-content/uploads/elementor/css/post-899.css",
+    "https://data-volt.com/wp-content/uploads/elementor/css/post-3207.css",
+    "https://use.typekit.net/zaz2ghg.css"
+  ],
+  "colors": {
+    "navy": "#091C54",
+    "indigo": "#010050",
+    "blue": "#3B64DD",
+    "focus": "#2768FF",
+    "lavender": "#5D65AE",
+    "periwinkle": "#828EFF",
+    "paper": "#F5F5F7",
+    "text": "#484849"
+  },
+  "fonts": {
+    "light": "https://data-volt.com/wp-content/uploads/2023/08/NeoSansArabic-Light.ttf",
+    "regular": "https://data-volt.com/wp-content/uploads/2023/08/NeoSansArabic.ttf",
+    "medium": "https://data-volt.com/wp-content/uploads/2023/08/NeoSansArabic-Medium.ttf"
+  },
+  "radii": {
+    "editorial_images": 15,
+    "standard_buttons": 3,
+    "floating_header": 20
+  },
+  "adaptations": [
+    "Retain the wireframe content and original editorial composition",
+    "Retain the requested floating navigation",
+    "Use indigo scrims for hero text contrast; no decorative gradient section backgrounds",
+    "Keep keyboard focus and reduced-motion behavior"
+  ],
+  "provenance": "Observed live website styles, not a separately supplied brand manual"
+}

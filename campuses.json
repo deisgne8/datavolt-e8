@@ -1,0 +1,56 @@
+[
+  {
+    "name": "RUH-E",
+    "location": "Riyadh East, Saudi Arabia",
+    "capacity": "44MW",
+    "status": "About to go live",
+    "country": "saudi",
+    "image": "campuses/data-hall",
+    "caption": "Illustrative data hall · Not a RUH-E site photograph"
+  },
+  {
+    "name": "TASDC01",
+    "location": "Tashkent IT Park, Uzbekistan",
+    "capacity": "12MW",
+    "status": "About to go live",
+    "country": "uzbekistan",
+    "image": "campuses/tashkent",
+    "caption": "Tashkent IT Park · Architectural render"
+  },
+  {
+    "name": "Yanbu",
+    "location": "Yanbu, Saudi Arabia",
+    "capacity": "4MW",
+    "status": "About to go live",
+    "country": "saudi",
+    "image": "campuses/network-infrastructure",
+    "caption": "Illustrative infrastructure · Not a Yanbu site photograph"
+  },
+  {
+    "name": "NEOM Phase 1",
+    "location": "Oxagon, Saudi Arabia",
+    "capacity": "360MW",
+    "status": "In construction",
+    "country": "saudi",
+    "image": "campuses/oxagon",
+    "caption": "Oxagon · Masterplan illustration, not the DataVolt campus"
+  },
+  {
+    "name": "RUH-J",
+    "location": "Riyadh, Saudi Arabia",
+    "capacity": "16MW",
+    "status": "In construction",
+    "country": "saudi",
+    "image": "campuses/data-hall",
+    "caption": "Illustrative data hall · Not a RUH-J site photograph"
+  },
+  {
+    "name": "Haqel",
+    "location": "Saudi Arabia",
+    "capacity": "2MW",
+    "status": "In construction",
+    "country": "saudi",
+    "image": "campuses/infrastructure-render",
+    "caption": "Illustrative infrastructure render · Not the Haqel campus"
+  }
+]

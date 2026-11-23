@@ -1,0 +1,8 @@
+.hero h1>.hero-reveal-line{display:block;color:inherit}
+.hero h1>.hero-reveal-line>span{color:#87bfff}
+@media(prefers-reduced-motion:no-preference){
+ .motion-pending{opacity:0}
+}
+@media(prefers-reduced-motion:reduce){
+ .motion-pending{opacity:1!important}
+}

@@ -1,0 +1,104 @@
+/* Observed DataVolt website styles, checked 20 November 2026.
+   Source: data-volt.com Elementor homepage CSS, custom fonts and rendered navigation.
+   This adapts the live site's system to the approved homepage composition. */
+@font-face{font-family:'Neo Sans Light';src:url('assets/neo-sans-light.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Neo Sans Regular';src:url('assets/neo-sans-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Neo Sans Medium';src:url('assets/neo-sans-medium.ttf') format('truetype');font-weight:500 700;font-style:normal;font-display:swap}
+:root{
+  --intro-hero-bg:#000445;
+  --brand-navy:#091c54;
+  --brand-indigo:#010050;
+  --brand-blue:#3b64dd;
+  --brand-focus:#2768ff;
+  --brand-lavender:#5d65ae;
+  --brand-periwinkle:#828eff;
+  --brand-paper:#f5f5f7;
+  --brand-grey:#484849;
+  --brand-line:#dcdde6;
+  --brand-radius:15px;
+  --font-light:'Neo Sans Light',Geist,Arial,sans-serif;
+  --font-regular:'Neo Sans Regular',Geist,Arial,sans-serif;
+  --font-medium:'Neo Sans Medium',Geist,Arial,sans-serif;
+  --font-navigation:obvia,'Neo Sans Regular',Arial,sans-serif;
+  --ink:var(--brand-navy);
+  --navy:var(--brand-indigo);
+  --blue:var(--brand-blue);
+  --paper:var(--brand-paper);
+  --muted:var(--brand-grey);
+  --line:var(--brand-line);
+  --font:var(--font-light);
+}
+body{font-family:var(--font);background:white;font-size:17px}
+h1,h2{font-family:var(--font-light);font-weight:400;letter-spacing:-.025em}
+h3{font-family:var(--font-medium);font-weight:500;letter-spacing:-.015em;line-height:1.2}
+.hero h1{letter-spacing:-.025em;line-height:1.08}
+.hero p{font-size:18px;line-height:1.65}
+.eyebrow{font-family:var(--font-regular);font-weight:400;font-size:14px;letter-spacing:.08em}
+.button,.link,.filter,.campus-tabs button,.campus-status,.news-meta{font-family:var(--font-medium);font-weight:500}
+.button{border-radius:3px;font-size:15px}
+.button:hover{background:var(--brand-navy);border-color:var(--brand-navy)}
+.button.outline{color:var(--brand-blue);border-color:var(--brand-blue)}
+.button.outline:hover{color:var(--brand-navy);background:#eceef9;border-color:var(--brand-navy)}
+.link{color:var(--brand-blue);text-decoration:none;font-size:16px}
+.link:hover{text-decoration:underline;color:var(--brand-navy)}
+:focus-visible{outline-color:var(--brand-focus)}
+.header{box-shadow:0 8px 32px #01005014}
+.nav-dropdown summary,.nav-panel a,.nav-panel .link,.menu{font-family:var(--font-navigation);font-weight:500;color:#000}
+.header .nav-dropdown summary,.header .nav-panel a,.header .nav-panel .link{font-size:15px}
+.nav-dropdown[open] summary,.nav-dropdown summary:hover,.nav-panel .link:hover{color:var(--brand-blue)}
+.header-tools .button{font-family:var(--font-medium)}
+.header-tools .sales{color:var(--brand-blue)}
+.header-tools .language{font-family:var(--font-regular);background:transparent;transition:background .2s ease}
+.header-tools .language:hover{background:var(--brand-paper)}
+.hero .eyebrow,.portfolio-heading .eyebrow,.closing .eyebrow{color:#bdc4ff}
+.hero p{color:#f1f1fb}
+.hero .hero-explore{background:var(--brand-blue);color:white;border-color:var(--brand-blue)}
+.hero .hero-explore:hover{background:#3155c3;border-color:#3155c3}
+.hero .actions button{border-color:#b2b9e5}
+.hero .actions button:hover{background:var(--brand-lavender)}
+.stat strong{font-family:var(--font-light);font-weight:400;letter-spacing:-.025em}
+.stat-label,.portfolio-intro{color:#d6d8ec;font-family:var(--font-regular)}
+.stats,.stat{border-color:#424276}
+#campuses,#services,#sustainability,#careers{background:var(--brand-paper)}
+#audiences,#about,#news,#faq{background:white}
+.campus-tabs button{color:var(--brand-grey)}
+.campus-tabs button[aria-selected=true]{color:var(--brand-blue)}
+.campus-panel h3,.campus-panel .capacity{font-family:var(--font-light);font-weight:400;letter-spacing:-.025em}
+.campus-status,.news-meta{font-size:13px;letter-spacing:.06em}
+.campus-image,.regional-image img,.backing-image,.split>.placeholder,.news .placeholder,.careers-banner{border-radius:var(--brand-radius);overflow:hidden}
+.backing-image>img{object-fit:cover;object-position:center;transform:none}
+.image-caption,.campus-image figcaption,.hero-caption{font-family:var(--font-regular)}
+.service,.audience-row,.audience-rows,.sustainability-points>div,.career-path{border-color:var(--brand-line)}
+.service h3,.audience-row h3,.sustainability-points h3,.deployment-stage h3{color:var(--brand-grey)}
+#why{background:white;color:var(--brand-navy)}
+#why .eyebrow{color:var(--brand-blue)}
+#why .button{color:var(--brand-blue);border-color:var(--brand-blue)}
+#why .button:hover{background:var(--brand-paper)}
+.why-row{border-color:var(--brand-line)}
+.why-row h3{color:var(--brand-grey)}
+.why-row p,.regional-image figcaption{color:var(--brand-grey)}
+.news h3,.news .card:first-child h3{font-family:var(--font-light);font-weight:400;letter-spacing:-.025em}
+.faq summary{font-family:var(--font-regular)}
+.closing h2{font-family:var(--font-light);font-weight:400;letter-spacing:-.025em}
+.capacity-question{font-family:var(--font-light);font-weight:400}
+.closing p{color:#d6d8ec}
+.footer{border-color:#37366e}
+.footer-grid h3{font-family:var(--font-regular);color:var(--brand-periwinkle);text-transform:uppercase;letter-spacing:.06em}
+.footer .link,.footer-grid a,.footer-offices{color:white;font-family:var(--font-regular)}
+.footer-bottom{color:#a5afff;border-color:#37366e}
+.footer-bottom .link{color:#a5afff}
+.enquiry-dialog,.dialog{border-radius:var(--brand-radius);background:white}
+input,select,textarea{font-family:var(--font-regular);border-color:#b4b7cf}
+@media(max-width:1100px){.nav-dropdown summary{font-size:16px}}
+@media(max-width:700px){
+  .hero h1{font-size:clamp(38px,10.7vw,52px)}
+  .hero p{font-size:16px;line-height:1.6}
+  .eyebrow,.hero .eyebrow{font-size:12px}
+  .hero .button{font-size:14px}
+  .stat-label{font-size:13px}
+}
+
+/* Navigation follows scroll direction without changing page layout. */
+.header{transition:transform .24s ease}
+.header.is-scroll-hidden{transform:translate3d(0,calc(-100% - 28px),0);pointer-events:none}
+@media(prefers-reduced-motion:reduce){.header{transition:none}}

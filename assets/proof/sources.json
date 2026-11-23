@@ -1,0 +1,42 @@
+[
+  {
+    "file": "capacity.webp",
+    "source": "https://unsplash.com/photos/klWUhr-wPJ8",
+    "download": "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?fit=crop&w=800&q=80&fm=webp",
+    "photographer": "imgix",
+    "license": "Unsplash License",
+    "usage": "Decorative illustrative photograph, not a DataVolt facility"
+  },
+  {
+    "file": "construction.webp",
+    "source": "https://unsplash.com/photos/FQkvaaXQ6Og",
+    "download": "https://images.unsplash.com/photo-1720459672781-d2288228b94b?fit=crop&w=800&q=80&fm=webp",
+    "photographer": "Neil Martin",
+    "license": "Unsplash License",
+    "usage": "Decorative illustrative photograph, not a DataVolt facility"
+  },
+  {
+    "file": "campuses.webp",
+    "source": "https://unsplash.com/photos/LdUMIxo8I_U",
+    "download": "https://images.unsplash.com/photo-1790511808041-9b80fe88efd8?fit=crop&w=800&q=80&fm=webp",
+    "photographer": "Vlad Ciutacu",
+    "license": "Unsplash License",
+    "usage": "Decorative illustrative photograph, not a DataVolt facility"
+  },
+  {
+    "file": "countries.webp",
+    "source": "https://unsplash.com/photos/Q1p7bh3SHj8",
+    "download": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?fit=crop&w=800&q=80&fm=webp",
+    "photographer": "NASA",
+    "license": "Unsplash License",
+    "usage": "Decorative illustrative photograph, not a DataVolt facility"
+  },
+  {
+    "file": "live.webp",
+    "source": "https://unsplash.com/photos/k27hkqXuveo",
+    "download": "https://images.unsplash.com/photo-1775519520461-6b6e068d9250?fit=crop&w=800&q=80&fm=webp",
+    "photographer": "Eric Stoynov",
+    "license": "Unsplash License",
+    "usage": "Decorative illustrative photograph, not a DataVolt facility"
+  }
+]

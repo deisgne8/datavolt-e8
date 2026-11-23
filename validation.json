@@ -1,0 +1,1239 @@
+{
+  "widths_checked": [
+    1440,
+    1024,
+    390
+  ],
+  "horizontal_overflow": false,
+  "hero_actions_visible_on_first_load": true,
+  "country_filter_and_keyboard_tabs": "passed",
+  "image_loading": "passed",
+  "internal_anchors": "passed",
+  "enquiry_type_and_escape": "passed",
+  "desktop_axe_wcag2a_wcag2aa_wcag21aa_violations": 0,
+  "portfolio_capacity_mw": 438,
+  "construction_capacity_mw": 378,
+  "mobile_axe_wcag2a_wcag2aa_wcag21aa_violations": 0,
+  "enquiry_submission_demo_notice": "passed",
+  "enquiry_focus_restoration": "passed",
+  "floating_navigation": {
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "overflow": false,
+    "dropdowns": "passed",
+    "mobile_menu": "passed",
+    "enquiry_action": "passed"
+  },
+  "brand_update": {
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "axe_violations_at_each_width": 0,
+    "horizontal_overflow": false,
+    "hero_actions_visible": true,
+    "campus_filter_and_keyboard": "passed",
+    "navigation_and_enquiry": "passed",
+    "neo_sans_loaded": true,
+    "obvia_loaded": true
+  },
+  "deployment_section": {
+    "reference": "https://arago.wawww.studio/",
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_wcag2a_wcag2aa_wcag21aa_violations_at_each_width": 0,
+    "scroll_motion": "passed",
+    "pause_holds_scene": "passed",
+    "reduced_motion": "passed",
+    "contact_dialog_and_escape": "passed",
+    "mobile_static_pose": "passed",
+    "still_image_fallback": "passed",
+    "broken_images": 0,
+    "browser_console_errors": 0,
+    "bundle_rebuild": "passed"
+  },
+  "deployment_silver_update": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_wcag2a_wcag2aa_wcag21aa_violations_at_each_width": 0,
+    "contact_dialog": "passed",
+    "posters_regenerated": true,
+    "bundle_rebuild": "passed"
+  },
+  "deployment_material_rebuild": {
+    "material": "opaque MeshPhysicalMaterial",
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations_at_each_width": 0,
+    "motion": "passed",
+    "pause": "passed",
+    "posters_regenerated": true,
+    "build_and_syntax": "passed"
+  },
+  "deployment_video_lighting": {
+    "reference": "istockphoto-2262901678-640_adpp_is.mp4",
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations_at_each_width": 0,
+    "contact_dialog": "passed",
+    "posters_regenerated": true,
+    "build_and_syntax": "passed"
+  },
+  "deployment_rack_alignment": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "stepped_start_and_aligned_finish": "visually checked",
+    "scroll_reverse": "passed",
+    "pause_freezes": "passed",
+    "reduced_motion": "passed",
+    "posters_regenerated": true,
+    "build_and_syntax": "passed"
+  },
+  "deployment_graphite_palette": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations_at_each_width": 0,
+    "wide_camera_view": "visually checked",
+    "posters_regenerated": true,
+    "build_and_syntax": "passed",
+    "background": "#091D54"
+  },
+  "deployment_reference_framing": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations_at_each_width": 0,
+    "close_and_wide_views": "visually compared with reference",
+    "keyboard_restores_copy_and_contact": "passed",
+    "pause": "passed",
+    "reduced_motion_copy_visible": "passed",
+    "posters_regenerated": true,
+    "build_and_syntax": "passed"
+  },
+  "offers_editorial": {
+    "reference": "https://unitedcarriers.com/careers",
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations_at_each_width": 0,
+    "scroll_progress": [
+      "01",
+      "02",
+      "03",
+      "04"
+    ],
+    "keyboard_selects_row": "passed",
+    "reduced_motion_marker": "static",
+    "original_copy_and_cta_behavior": "preserved",
+    "syntax_check": "passed"
+  },
+  "mobius_preloader": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "actual_supplied_glb": true,
+    "normal_reveal_and_scroll_unlock": "passed",
+    "keyboard_skip_and_escape": "passed",
+    "reduced_motion": "passed",
+    "failed_model_fallback": "passed",
+    "stalled_module_watchdog": "passed",
+    "no_javascript_homepage": "passed",
+    "axe_preloader_violations": 0,
+    "build_and_syntax": "passed"
+  },
+  "mobius_reference_motion": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "arrival_seconds": 1.7,
+    "spin_seconds": 3.4,
+    "progress_seconds": 2.4,
+    "fade_interval_seconds": [
+      2.6,
+      3.2
+    ],
+    "motion": "small/distant \u2192 spinning scale-up \u2192 camera zoom \u2192 fade",
+    "horizontal_overflow": false,
+    "runtime_errors": 0,
+    "keyboard_skip": "passed",
+    "reduced_motion": "passed",
+    "scroll_unlock": "passed",
+    "build_and_syntax": "passed"
+  },
+  "preloader_3d_rotation": {
+    "widths_checked": [
+      1440,
+      390
+    ],
+    "upright_ring_pose": "visually checked",
+    "runtime_errors": 0,
+    "horizontal_overflow": false,
+    "reduced_motion": "passed",
+    "reveal_and_scroll_unlock": "passed",
+    "build_and_syntax": "passed"
+  },
+  "preloader_playback_speed": {
+    "rate": 0.6666666666666666,
+    "timeline_seconds": 4.8,
+    "reveal_and_scroll_unlock": "passed",
+    "syntax": "passed"
+  },
+  "seamless_mobius": {
+    "widths_checked": [
+      1440,
+      390
+    ],
+    "rendered_loop_boundary_identical": true,
+    "runtime_errors": 0,
+    "horizontal_overflow": false,
+    "reduced_motion": "passed",
+    "reveal_and_scroll_unlock": "passed",
+    "build_and_syntax": "passed"
+  },
+  "preloader_navigation_handoff": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "docked_mark_loaded": true,
+    "runtime_errors": 0,
+    "horizontal_overflow": false,
+    "mobile_menu": "passed",
+    "reduced_motion_direct_handoff": "passed",
+    "build_and_syntax": "passed",
+    "timeline_seconds": 5.4
+  },
+  "navigation_brand_mark": {
+    "widths_checked": [
+      1440,
+      390
+    ],
+    "asset": "assets/datavolt-logo.webp",
+    "runtime_errors": 0,
+    "horizontal_overflow": false,
+    "mark_loaded": true,
+    "home_link": "#home",
+    "build_and_syntax": "passed"
+  },
+  "interactive_hero": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations_at_each_width": 0,
+    "runtime_errors": 0,
+    "drag_rotation": "passed",
+    "keyboard_rotation": "passed",
+    "enquiry_action": "passed",
+    "reduced_motion_starts_paused": true,
+    "no_js_poster_and_actions": "passed",
+    "build_and_syntax": "passed"
+  },
+  "audiences_on_energy": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations_at_each_width": 0,
+    "runtime_errors": 0,
+    "pause_play": "passed",
+    "reduced_motion_no_video_request": true,
+    "original_copy_and_cta_behavior": "preserved",
+    "mobile_number_copy_separation": "passed",
+    "syntax": "passed"
+  },
+  "elastic_mobius_hero": {
+    "reference": "https://vault.hyperiux.com/",
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "hero_axe_violations": 0,
+    "hover_response": "passed",
+    "paused_pixel_stability": "passed",
+    "reduced_motion_pixel_stability": "passed",
+    "keyboard_rotation": "passed",
+    "native_touch_rotation": "passed",
+    "mobile_menu": "passed",
+    "campus_link": "passed",
+    "enquiry_dialog": "passed",
+    "no_js_poster": "passed",
+    "runtime_errors": 0,
+    "build_and_syntax": "passed"
+  },
+  "hover_only_mobius": {
+    "reference": "https://vault.hyperiux.com/",
+    "drag_rotation": "disabled",
+    "swipe_rotation": "disabled",
+    "pointer_capture": false,
+    "canvas_pointer_listeners": [],
+    "default_cursor": true,
+    "motion": "six-point local cursor wake with restrained tilt",
+    "pause_drag_stability": "passed",
+    "reduced_motion_stability": "passed",
+    "native_touch_scroll": "passed",
+    "responsive_widths": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "hero_axe_violations": 0,
+    "runtime_errors": 0,
+    "build_and_syntax": "passed"
+  },
+  "hero_pose_controls": {
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "pause_reset_removed": true,
+    "hover_preserved": true,
+    "drag_disabled": true,
+    "reduced_motion_preserved": true,
+    "hero_axe_violations": 0,
+    "horizontal_overflow": false,
+    "runtime_errors": 0,
+    "enquiry": "passed",
+    "build_and_syntax": "passed"
+  },
+  "mobius_flowing_lines": {
+    "reference": "https://autorouter.com/",
+    "source_model": "assets/preloader/mobius-logo.glb",
+    "paths": "40 closed strands covering both sides of the supplied GLB",
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "hero_axe_violations": 0,
+    "runtime_errors": 0,
+    "animated_pixel_comparison": "changed",
+    "reduced_motion_pixel_comparison": "unchanged",
+    "no_js_fallback": "passed",
+    "enquiry": "passed",
+    "drag_disabled": true,
+    "pause_reset_absent": true,
+    "build_and_syntax": "passed"
+  },
+  "reference_spectrum_motion": {
+    "spectrum": [
+      "green",
+      "blue",
+      "violet",
+      "pink",
+      "orange"
+    ],
+    "background": "#050505",
+    "strand_paths": 32,
+    "surface_strands": 64,
+    "pulse_cycle_seconds": 10,
+    "autonomous_motion": true,
+    "hover_or_drag_orbit": false,
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "hero_axe_violations": 0,
+    "runtime_errors": 0,
+    "reduced_motion_pixel_comparison": "unchanged",
+    "normal_motion_pixel_comparison": "changed",
+    "removed_controls_absent": true,
+    "sample_average_frame_ms": 16.3,
+    "build_and_syntax": "passed"
+  },
+  "navy_line_compositing": {
+    "background": "#000445",
+    "desktop_mobile_checked": [
+      1440,
+      390
+    ],
+    "dark_fringe_removed": true,
+    "minimum_rgb_in_strand_region": [
+      0,
+      3,
+      68
+    ],
+    "background_rgb": [
+      0,
+      4,
+      69
+    ],
+    "rounding_tolerance": 1,
+    "fallback_updated": true,
+    "build_and_syntax": "passed"
+  },
+  "proof_figures_redesign": {
+    "reference": "https://madarplatform.com/en/",
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "panel_overflow": false,
+    "figures": [
+      "438 MW",
+      "378 MW",
+      "6",
+      "2",
+      "3"
+    ],
+    "desktop_and_mobile_axe_violations": 0,
+    "syntax": "passed"
+  },
+  "campus_gallery": {
+    "reference": "https://lpas.com/",
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "axe_violations": 0,
+    "next_previous": "passed",
+    "country_filter": "passed",
+    "single_campus_disabled_controls": "passed",
+    "keyboard_tabs": "passed",
+    "image_details_counter_sync": "passed",
+    "campus_preview_and_enquiry": "passed",
+    "syntax": "passed"
+  },
+  "campus_scroll_sequence": {
+    "supersedes": "campus_gallery",
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "intro_only_on_entry": true,
+    "pinned_horizontal_scroll": "passed",
+    "reverse_and_exit": "passed",
+    "keyboard_focus_reveal": "passed",
+    "six_campus_details_preserved": true,
+    "specifications_disclosure": "passed",
+    "reduced_motion_vertical_fallback": "passed",
+    "no_javascript_six_cards_visible": true,
+    "document_horizontal_overflow": false,
+    "section_axe_violations": 0,
+    "enquiry_and_campus_dialogs": "passed",
+    "syntax": "passed"
+  },
+  "lpas_motion_review": {
+    "reference": "https://lpas.com/",
+    "supersedes": "campus_scroll_sequence",
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "stationary_intro": true,
+    "eased_horizontal_motion": "passed",
+    "image_zoom_and_row_growth": "passed",
+    "staggered_reveals": "passed",
+    "explore_cursor_px": 110,
+    "image_click_preview": "passed",
+    "keyboard_preview": "passed",
+    "mobile_vertical_side_image_reveal": "passed",
+    "section_axe_violations": 0,
+    "horizontal_overflow": false,
+    "final_card_alignment_and_release": "passed",
+    "reduced_motion_static_reset": "passed",
+    "syntax": "passed"
+  },
+  "proof_white_palette": {
+    "background": "#ffffff",
+    "background_image_removed": true,
+    "figures_preserved": true,
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "section_axe_violations": 0
+  },
+  "proof_heading_size": {
+    "matches_why_heading": true,
+    "computed_px_at_1440_1024_390": [
+      64.8,
+      50,
+      45
+    ],
+    "horizontal_overflow": false
+  },
+  "proof_compact_heading": {
+    "single_line_widths": [
+      1440,
+      1308,
+      1024,
+      390
+    ],
+    "heading_to_cards_gap_px": [
+      48,
+      48,
+      40,
+      32
+    ],
+    "horizontal_overflow": false
+  },
+  "deployment_step_sequence": {
+    "widths": [
+      1440,
+      1024,
+      390
+    ],
+    "intro_only_on_entry": true,
+    "cumulative_steps_at_progress": [
+      0.16,
+      0.38,
+      0.6
+    ],
+    "cta_under_intro": "passed",
+    "cta_dialog": "passed",
+    "editorial_remains_visible": true,
+    "reduced_motion_all_visible": true,
+    "section_axe_violations": 0,
+    "horizontal_overflow": false,
+    "final_runtime_errors": 0,
+    "build_and_syntax": "passed"
+  },
+  "deployment_typography": {
+    "matches_why_heading": true,
+    "computed_px_at_1440_1024_390": [
+      64.8,
+      50,
+      45
+    ],
+    "label_px_desktop_mobile": [
+      14,
+      11
+    ],
+    "horizontal_overflow": false,
+    "localized_contrast_backing": false
+  },
+  "scroll_direction_navigation": {
+    "down": "hidden",
+    "up": "visible",
+    "page_top": "visible",
+    "keyboard_focus_reveals": true,
+    "open_mobile_menu_stays_visible": true,
+    "desktop_mobile_checked": true,
+    "syntax": "passed"
+  },
+  "deployment_cleanup": {
+    "top_divider_removed": true,
+    "intro_background_box_removed": true
+  },
+  "deployment_spacing": {
+    "heading_two_lines_at": [
+      1440,
+      1308,
+      1024,
+      390
+    ],
+    "rack_offset": "responsive to CTA position",
+    "observed_offset_at_1308": "156px",
+    "horizontal_overflow": false,
+    "syntax": "passed"
+  },
+  "deployment_step_alignment": {
+    "heading_top_difference_px": 0,
+    "card_backgrounds": "transparent",
+    "bottom_reference_and_pause_removed": true,
+    "webgl_scene_ready": true,
+    "runtime_errors": 0,
+    "build_and_syntax": "passed"
+  },
+  "campus_official_brand_update": {
+    "date": "2026-11-23",
+    "viewports": [
+      1440,
+      1024,
+      390
+    ],
+    "all_images_loaded": true,
+    "horizontal_overflow": false,
+    "syntax_check": "passed",
+    "preserved_scroll_behavior": true
+  },
+  "offers_dot_icons": {
+    "date": "2026-11-23",
+    "viewports": [
+      1440,
+      1024,
+      390
+    ],
+    "all_four_states_and_reverse": "passed",
+    "overflow": false,
+    "reduced_motion": "all copy visible",
+    "keyboard": "focus selects matching icon and reveals action",
+    "syntax": "passed"
+  },
+  "why_editorial_rows": {
+    "viewports": [
+      1440,
+      1024,
+      390
+    ],
+    "overflow": false,
+    "keyboard_arrow_navigation": "passed",
+    "reduced_motion": "0s transitions",
+    "axe_violations": 0
+  },
+  "blue_section_transition": {
+    "viewports": [
+      1440,
+      1024,
+      390
+    ],
+    "overflow": false,
+    "white_endpoint": true,
+    "animation_loop": false
+  },
+  "soft_gradient_transition": {
+    "viewports": [
+      1440,
+      1024,
+      390
+    ],
+    "overflow": false,
+    "overlap_desktop": 200,
+    "overlap_mobile": 160,
+    "card_surfaces_preserved": true,
+    "pause_control_preserved": true
+  },
+  "audience_motion_button_removed": true,
+  "partner_logos": {
+    "both_loaded": true,
+    "vision_invest_dark_on_light": true,
+    "mobile_390_no_overflow": true
+  },
+  "sustainability_fullscreen": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "all_images_loaded": true,
+    "forward_reverse_themes": "passed",
+    "reduced_motion_stacked": "passed",
+    "axe_violations": 0
+  },
+  "sustainability_scroll_reveal": {
+    "numbers_removed": true,
+    "titles_aligned_to_gutter": true,
+    "line_and_text_scroll_progress": "passed",
+    "reverse_scroll": "passed",
+    "mobile_no_overflow": true,
+    "reduced_motion_static": "passed"
+  },
+  "sustainability_three_segments": {
+    "equal_segments": 3,
+    "card_boundaries": [
+      0.333333,
+      0.666667
+    ],
+    "progress_retained_across_cards": true,
+    "reverse_scroll": "passed",
+    "mobile_no_overflow": true
+  },
+  "media_carousel": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_page_overflow": false,
+    "sort_date_and_type": "passed",
+    "arrows_and_keyboard": "passed",
+    "article_dialog": "passed",
+    "images_loaded": true,
+    "hover_clip_path": "none",
+    "axe_violations": 0
+  },
+  "footer_glass_panels": {
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "horizontal_overflow": false,
+    "book_tour_and_contact_sales": "passed",
+    "footer_anchor_navigation": "passed",
+    "axe_violations": 0
+  },
+  "footer_intro_above_cards": {
+    "desktop": true,
+    "mobile": true,
+    "horizontal_overflow": false
+  },
+  "preloader_forward_zoom": {
+    "top_wordmark_removed": true,
+    "skip_button_removed": true,
+    "nav_docking_removed": true,
+    "full_screen_zoom_verified": true,
+    "desktop_mobile_completion": "passed",
+    "scroll_unlock": "passed",
+    "reduced_motion": "passed"
+  },
+  "preloader_clean_reveal": {
+    "exit_zoom": 32,
+    "opaque_exit_frames_checked": 105,
+    "hero_crossfade_removed": true,
+    "desktop_mobile_completion": "passed"
+  },
+  "preloader_percentage_only": {
+    "line_removed": true,
+    "percentage_updates": true,
+    "completion": "passed"
+  },
+  "compact_navigation": {
+    "desktop_height_px": 62.4,
+    "mobile_height_px": 52,
+    "nav_font_size": "15px",
+    "nav_font_weight": 500,
+    "verified_widths": [
+      320,
+      390,
+      1101,
+      1150,
+      1201,
+      1308,
+      1440
+    ],
+    "search_results_and_empty_state": "passed",
+    "escape_and_mobile_menu": "passed"
+  },
+  "navigation_logo_increase": {
+    "scale": 1.2,
+    "header_height_preserved": true,
+    "verified_widths": [
+      320,
+      375,
+      390,
+      1024,
+      1101,
+      1150,
+      1201,
+      1308,
+      1440
+    ],
+    "header_overflow": false
+  },
+  "preloader_circular_exit": {
+    "reference_pose_alignment": true,
+    "opening_centered": true,
+    "optical_zoom": 32,
+    "desktop_mobile_completion": "passed",
+    "scroll_unlock": "passed"
+  },
+  "preloader_clockwise_finish": {
+    "unwrapped_clockwise_phase": true,
+    "monotone_easing_samples": 629629,
+    "exit_playback_seconds": 2.25,
+    "desktop_mobile_completion": "passed",
+    "scroll_unlock": "passed"
+  },
+  "preloader_full_clockwise_turn": {
+    "revolution_playback_seconds": 2.7,
+    "full_size_playback_seconds": 0.75,
+    "full_size_turns_before_exit": 1.1222222222222222,
+    "exit_playback_seconds": 1.575,
+    "desktop_mobile_completion": "passed",
+    "syntax_checks": "passed"
+  },
+  "gradient_buttons": {
+    "palette": [
+      "#00FAFF",
+      "#091C54",
+      "#5A7AD9",
+      "#6462F2"
+    ],
+    "reference": "https://www.eternacloud.com/",
+    "hover_transition": "verified intermediate and final background positions",
+    "outline_hover_text": "#091C54",
+    "responsive_widths": [
+      320,
+      390,
+      1024,
+      1440
+    ],
+    "enquiry_actions": "passed",
+    "reduced_motion": "passed"
+  },
+  "hero_line_width": {
+    "css_pixels": 1,
+    "screen_space_ribbons": true,
+    "desktop_mobile_render": "passed",
+    "syntax_checks": "passed"
+  },
+  "hero_mouse_follow": {
+    "spring_tilt": true,
+    "click_drag_enabled": false,
+    "reduced_motion_respected": true,
+    "desktop_mobile_render": "passed"
+  },
+  "preloader_hero_handoff": {
+    "shared_background": "#000445",
+    "exit_hold_removed": true,
+    "viewport_clear_reveal": true,
+    "desktop_mobile_hero_ready": "passed",
+    "syntax_checks": "passed"
+  },
+  "page_motion": {
+    "hero_stagger_ms": [
+      0,
+      80,
+      160,
+      260,
+      360,
+      440,
+      560,
+      660
+    ],
+    "section_stagger_ms": 85,
+    "section_delay_cap_ms": 300,
+    "section_duration_ms": 760,
+    "section_visibility_checks": 12,
+    "mobile_overflow": false,
+    "keyboard_focus": "passed",
+    "reduced_motion": "passed",
+    "syntax_checks": "passed"
+  },
+  "faq_motion": {
+    "reference": "https://hyperbolic.studiofreight.dev/",
+    "divider_ms": 500,
+    "icon_rotation_ms": 500,
+    "answer_ms": 500,
+    "original_layout_and_font_preserved": true,
+    "rapid_toggle": "passed",
+    "keyboard": "passed",
+    "mobile_cta": "passed",
+    "reduced_motion": "passed"
+  },
+  "faq_sticky_intro": {
+    "label": "FAQ",
+    "topics_removed": true,
+    "top_aligned": true,
+    "sticky_top_px": 100,
+    "scroll_positions_verified": [
+      100,
+      100
+    ],
+    "mobile_overflow": false
+  },
+  "proof_count_images": {
+    "count_duration_ms": 1600,
+    "initial_values": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "intermediate_values": [
+      325,
+      254,
+      3,
+      0,
+      1
+    ],
+    "final_values": [
+      438,
+      378,
+      6,
+      2,
+      3
+    ],
+    "hover_and_keyboard_photo_reveal": "passed",
+    "reduced_motion": "immediate final values and no transitions",
+    "mobile_overflow": false,
+    "syntax_checks": "passed",
+    "image_sources": "assets/proof/sources.json"
+  },
+  "campus_popup_update": {
+    "background": "assets/campuses/datavolt-branded.jpg",
+    "background_width": 3840,
+    "caption_bars": 0,
+    "inline_specifications": 0,
+    "campus_dialogs_checked": 6,
+    "specification_rows_each": 4,
+    "mobile_overflow": false,
+    "arrow_reference": "https://www.on.energy/",
+    "syntax_checks": "passed"
+  },
+  "ruh_e_image": {
+    "source": "user supplied",
+    "asset": "assets/campuses/ruh-e-building.png",
+    "verified": "browser image decoded successfully"
+  },
+  "yanbu_image": {
+    "source": "user supplied",
+    "asset": "assets/campuses/yanbu-campus.png",
+    "position": "center 72%",
+    "verified": "browser image decoded successfully"
+  },
+  "neom_image": {
+    "source": "user supplied",
+    "asset": "assets/campuses/neom-data-centre.png",
+    "verified": "browser image decoded successfully"
+  },
+  "ruh_j_image": {
+    "source": "user supplied",
+    "asset": "assets/campuses/ruh-j-building.png",
+    "verified": "browser image decoded successfully"
+  },
+  "haqel_image": {
+    "source": "user supplied",
+    "asset": "assets/campuses/haqel-building.png",
+    "verified": "browser image decoded successfully"
+  },
+  "campus_violet": {
+    "cards": [
+      "TASDC01",
+      "RUH-J"
+    ],
+    "color": "#6462F2",
+    "computed": "rgb(100, 98, 242)"
+  },
+  "campus_final_hold": {
+    "hold": "80vh, minimum 600px",
+    "desktop_verified_hold_px": 764,
+    "final_image_height_px": 670,
+    "title_and_arrow_opacity": 1,
+    "pinned_during_hold": true,
+    "releases_after_hold": true,
+    "syntax_checks": "passed"
+  },
+  "deployment_sequence": {
+    "order": [
+      "heading",
+      "description",
+      "divider",
+      "next step"
+    ],
+    "desktop_starts": [
+      0.12,
+      0.36,
+      0.6
+    ],
+    "step_span": 0.24,
+    "scroll_smoothing_ms": 90,
+    "title_only_verified": true,
+    "partial_description_verified": true,
+    "reverse_scroll_verified": true,
+    "mobile_overflow": false,
+    "reduced_motion": "all content visible",
+    "syntax_checks": "passed"
+  },
+  "services_intro": {
+    "heading_left_image_right": true,
+    "font_matches_deployment": true,
+    "desktop_font_size": "58.86px at 1308px",
+    "font_weight": 400,
+    "mobile_overflow": false
+  },
+  "services_image": {
+    "asset": "assets/services-server-room.jpg",
+    "source": "user supplied",
+    "border_radius_px": 16,
+    "filter": "none",
+    "verified": "browser image decoded successfully"
+  },
+  "audience_equal_cards": {
+    "desktop_card": [
+      444.71875,
+      470.875
+    ],
+    "mobile_card": [
+      319.796875,
+      460
+    ],
+    "matches_news": true,
+    "last_card_keyboard_visible": true,
+    "page_overflow": false,
+    "video_bottom_gradient": true
+  },
+  "audience_scroll_carousel": {
+    "desktop_intro_first": true,
+    "cards_enter_from_right": true,
+    "aligned_heading_description_cta_rows": true,
+    "responsive_widths": [
+      390,
+      1000,
+      1440
+    ],
+    "carousel_controls": "passed",
+    "page_overflow": false,
+    "reduced_motion": "static layout",
+    "syntax_checks": "passed"
+  },
+  "audience_persistent_intro": {
+    "heading_always_visible": true,
+    "cards_below_intro": true,
+    "verified_viewports": [
+      [
+        1440,
+        955
+      ],
+      [
+        1144,
+        700
+      ]
+    ],
+    "overlap": false,
+    "page_overflow": false,
+    "syntax_checks": "passed"
+  },
+  "audience_glass_cards": {
+    "background": "rgba(9,28,84,.66)",
+    "blur_px": 20,
+    "desktop_height_px": 504,
+    "mobile_height_px": 414,
+    "content_fits": true,
+    "page_overflow": false,
+    "syntax_checks": "passed"
+  },
+  "audience_video_first": {
+    "intro_position": "upper right",
+    "text_delays_ms": [
+      400,
+      650,
+      900
+    ],
+    "card_delays_ms": [
+      1200,
+      1350,
+      1500
+    ],
+    "first_text_opacities": [
+      0,
+      0,
+      0
+    ],
+    "final_text_opacities": [
+      1,
+      1,
+      1
+    ],
+    "short_desktop_card_bottom": 684,
+    "short_desktop_viewport_height": 700,
+    "mobile_carousel": "passed",
+    "reduced_motion": "passed"
+  },
+  "audience_seamless_gradient": {
+    "overlays_video": true,
+    "shape": "elliptical blue glow",
+    "overlay_height": "clamp(380px,58vh,680px)",
+    "matching_boundary_color": "#526cdb",
+    "white_section_finish": true,
+    "visual_check": "passed",
+    "page_overflow": false
+  },
+  "audience_section_spacing": {
+    "desktop_tail_px": 112,
+    "mobile_tail_px": 64,
+    "desktop_next_section_padding_px": 64,
+    "mobile_next_section_padding_px": 48,
+    "desktop_card_to_heading_gap_px": 253.4,
+    "mobile_overflow": false
+  },
+  "audience_overlay_edge": {
+    "feathered_mask": true,
+    "visual_check": "passed",
+    "page_overflow": false
+  },
+  "audience_continuous_gradient": {
+    "shared_background_height_px": 665.9,
+    "dark_elliptical_center": true,
+    "lavender_fade_over_video": true,
+    "compact_spacing_retained": true,
+    "visual_check": "passed"
+  },
+  "backing_renewable_image": {
+    "asset": "assets/renewable-energy.png",
+    "caption_removed": true,
+    "object_position": "right center",
+    "zoom": 1.05,
+    "white_borders_hidden": true,
+    "visual_check": "passed",
+    "mobile_overflow": false
+  },
+  "sustainability_solar_wind": {
+    "asset": "assets/sustainability/solar-wind.jpg",
+    "source": "user supplied",
+    "decoded_width": 3000,
+    "visible_annotations": 0,
+    "scenes_preserved": 3,
+    "visual_check": "passed"
+  },
+  "responsible_development_image": {
+    "asset": "assets/sustainability/wind-farm.jpg",
+    "source": "user supplied Zac Wolff photograph",
+    "dimensions": [
+      2400,
+      1800
+    ],
+    "active_scene_verified": true,
+    "visual_check": "passed"
+  },
+  "media_header_cleanup": {
+    "sorting_controls": 0,
+    "sample_note": 0,
+    "explore_all_below_description": true,
+    "carousel_navigation": "passed",
+    "cards_preserved": 3,
+    "mobile_overflow": false,
+    "syntax_checks": "passed"
+  },
+  "partnerships_aerial_image": {
+    "asset": "assets/partnerships-aerial.jpg",
+    "dimensions": [
+      2364,
+      2364
+    ],
+    "position": "center",
+    "visual_check": "passed"
+  },
+  "news_annotations_removed": {
+    "image_labels": 0,
+    "cards": 3,
+    "more_buttons": 3,
+    "hover_image": "passed"
+  },
+  "cooling_water_image": {
+    "asset": "assets/sustainability/cooling-tower-night.jpg",
+    "source": "user supplied",
+    "dimensions": [
+      1532,
+      1026
+    ],
+    "active_scene_verified": true,
+    "visual_check": "passed"
+  },
+  "footer_riyadh_image": {
+    "asset": "assets/footer-riyadh.jpg",
+    "dimensions": [
+      1170,
+      1464
+    ],
+    "desktop_position": "50% 0%",
+    "mobile_position": "48% 0%",
+    "mobile_overflow": false,
+    "visual_check": "passed"
+  },
+  "shared_campus_arrows": {
+    "replaced": 16,
+    "dots_per_icon": 9,
+    "background": "#091c54",
+    "color": "#00faff",
+    "left_rotation": "180deg",
+    "carousel_navigation": "passed",
+    "footer_hover": "passed",
+    "mobile_overflow": false
+  },
+  "news_four_cards": {
+    "count": 4,
+    "new_card": "Designing infrastructure for a sustainable future",
+    "button_gap_px": 12,
+    "button_min_width_px": 140,
+    "mobile_horizontal_overflow": false,
+    "article_preview": "passed",
+    "carousel": "passed",
+    "syntax": "passed"
+  },
+  "footer_container_alignment": {
+    "widths_checked": [
+      1906,
+      1144,
+      390
+    ],
+    "matches_main_container": true,
+    "horizontal_overflow": false
+  },
+  "why_heading_consistency": {
+    "matches_deployment": true,
+    "widths_checked": [
+      1440,
+      1024,
+      390
+    ],
+    "font_weight": 400,
+    "horizontal_overflow": false
+  },
+  "footer_shorter_cards": {
+    "reduction_percent": 20,
+    "widths_checked": [
+      1906,
+      1440,
+      1144,
+      390
+    ],
+    "equal_heights": true,
+    "content_overflow": false
+  },
+  "proof_container_spacing": {
+    "widths_checked": [
+      1906,
+      1440,
+      1024,
+      768,
+      390
+    ],
+    "matches_main_container": true,
+    "equal_section_padding": true,
+    "number_or_page_overflow": false
+  }
+}
